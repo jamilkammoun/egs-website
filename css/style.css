@@ -2,7 +2,25 @@
    EGS — Energex Global Solutions
    Design System
    ============================================================ */
+/* Par défaut, on cache tout ce qui est arabe */
+.ar-t {
+    display: none;
+}
 
+/* Quand le site passe en mode arabe, on cache l'anglais et on montre l'arabe */
+html[lang="ar"] .en {
+    display: none;
+}
+
+html[lang="ar"] .ar-t {
+    display: inline-block; /* ou block selon le design */
+}
+
+/* Optionnel : Inverser le sens de lecture pour l'arabe */
+html[lang="ar"] body {
+    direction: rtl;
+    text-align: right;
+}
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Source+Sans+3:wght@300;400;500;600;700&family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap');
 
 /* ── VARIABLES ── */
