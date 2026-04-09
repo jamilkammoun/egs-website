@@ -3,16 +3,33 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<meta name="description" content="EGS Energex Global Solutions — Smart Home Systems Design, Supply & Installation in North Lebanon. Sonoff, Tuya, Summao products."/>
+<meta name="description" content="EGS Energex Global Solutions — Smart Home Systems Design, Supply & Installation in North Lebanon."/>
 <title>EGS — Energex Global Solutions | Smart Home Systems</title>
 <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
 
-<nav id="navbar"></nav>
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="images/EGS-logo.jpg" alt="EGS Logo" class="nav-logo-svg">
+      <div class="nav-logo-text">
+        <strong>Energex Global Solutions</strong>
+        <span>Smart Engineering</span>
+      </div>
+    </a>
+    <div class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html" class="nav-cta">Consultation</a>
+    </div>
+  </div>
+</nav>
 
-<!-- HERO -->
-<section class="hero">
+<section class="hero tech-hero">
+  <div class="hero-overlay"></div>
   <div class="container">
     <div class="hero-grid">
       <div class="hero-left">
@@ -20,34 +37,25 @@
           <span class="hero-dot"></span>
           North Lebanon's Smart Home Specialists
         </div>
-        <h1>
-          <span class="en">Engineered<br/><span class="text-green">Smart Living</span></span>
-          <span class="ar-t">أنظمة المنازل<br/><span class="text-green">الذكية</span></span>
-        </h1>
-        <p class="hero-sub">
-          <span class="en">Smart Home & Electrical Solutions</span>
-          <span class="ar-t">حلول المنازل الذكية والكهربائية</span>
-        </p>
-        <p class="hero-desc">
-          <span class="en">Professional design, supply, and installation of smart home systems. From a single smart switch to a fully automated residence — engineered to work reliably in Lebanon.</span>
-          <span class="ar-t">تصميم وتوريد وتركيب أنظمة المنازل الذكية. من مفتاح واحد إلى منزل مؤتمت بالكامل — مهندس للعمل بشكل موثوق في لبنان.</span>
-        </p>
+        <h1>Engineered<br/><span class="text-green">Smart Living</span></h1>
+        <p class="hero-sub">Smart Home & Electrical Solutions</p>
+        <p class="hero-desc">Professional design, supply, and installation of smart home systems. From a single smart switch to a fully automated residence — engineered to work reliably in Lebanon.</p>
         <div class="hero-btns">
           <a href="contact.html" class="btn btn-primary">📞 Get a Free Consultation</a>
           <a href="products.html" class="btn btn-outline">Explore Products →</a>
         </div>
         <div class="hero-stats">
           <div class="hero-stat">
-            <div class="hero-stat-val">3+</div>
-            <div class="hero-stat-lbl">Brands</div>
+            <div class="hero-stat-val">Sonoff</div>
+            <div class="hero-stat-lbl">Partner</div>
           </div>
           <div class="hero-stat">
-            <div class="hero-stat-val">50+</div>
-            <div class="hero-stat-lbl">Products</div>
+            <div class="hero-stat-val">Tuya</div>
+            <div class="hero-stat-lbl">Certified</div>
           </div>
           <div class="hero-stat">
-            <div class="hero-stat-val">4</div>
-            <div class="hero-stat-lbl">Services</div>
+            <div class="hero-stat-val">Summao</div>
+            <div class="hero-stat-lbl">Dealer</div>
           </div>
         </div>
       </div>
@@ -72,14 +80,6 @@
               <div class="hero-device-toggle"></div>
             </div>
             <div class="hero-device">
-              <div class="hero-device-ico">📷</div>
-              <div class="hero-device-info">
-                <div class="hero-device-name">Security Camera</div>
-                <div class="hero-device-status">● Recording — HD</div>
-              </div>
-              <div class="hero-device-toggle"></div>
-            </div>
-            <div class="hero-device">
               <div class="hero-device-ico">⚡</div>
               <div class="hero-device-info">
                 <div class="hero-device-name">Power Monitor</div>
@@ -94,145 +94,47 @@
   </div>
 </section>
 
-<!-- SERVICES OVERVIEW -->
 <section class="section section-light">
   <div class="container">
     <div class="text-center">
-      <span class="eyebrow">What We Do</span>
-      <h2 class="section-title">
-        <span class="en">Engineering-First Services</span>
-        <span class="ar-t">خدمات هندسية متكاملة</span>
-      </h2>
-      <p class="section-sub" style="margin:0 auto;">
-        <span class="en">We don't just sell products — we design, install, and maintain complete smart systems tailored to your space.</span>
-        <span class="ar-t">لا نبيع منتجات فقط — نصمم ونركب ونصون أنظمة ذكية متكاملة.</span>
-      </p>
+      <span class="eyebrow">Real Scenarios</span>
+      <h2 class="section-title">Sound Familiar?</h2>
+      <p class="section-sub" style="margin:0 auto;">These are real problems Lebanese homeowners face every day. Smart home solves all of them.</p>
     </div>
-    <div class="services-grid">
-      <div class="service-card">
-        <div class="service-icon">🏠</div>
-        <h3>Smart Home Systems Design & Installation</h3>
-        <p>End-to-end smart home projects — site assessment, system design, device installation, and app configuration.</p>
-        <a href="services.html" class="service-link">Learn more →</a>
+    <div class="cases-grid">
+      <div class="case-card">
+        <div class="case-ico-wrap" style="background:rgba(192,57,43,.1);">🔌</div>
+        <div class="case-problem">The Problem</div>
+        <div class="case-title">"The generator is overloading at 2am"</div>
+        <p class="case-desc">You wake up every night to turn off ACs manually. You're losing sleep and wasting fuel.</p>
+        <div class="case-solution">✅ EGS Solution: Smart switches auto-cut heavy loads when generator kicks in. Zero intervention needed.</div>
       </div>
-      <div class="service-card">
-        <div class="service-icon">⚡</div>
-        <h3>Electrical Systems & Power Distribution</h3>
-        <p>Professional electrical installations integrated with smart control systems — generator monitoring, circuit protection, and more.</p>
-        <a href="services.html" class="service-link">Learn more →</a>
+      <div class="case-card">
+        <div class="case-ico-wrap" style="background:rgba(30,77,160,.1);">❄️</div>
+        <div class="case-problem">The Problem</div>
+        <div class="case-title">"I left the AC on — I'm already at work"</div>
+        <p class="case-desc">Your electricity bill is running while you're not home. No way to turn it off remotely.</p>
+        <div class="case-solution">✅ EGS Solution: Open your phone, tap once. AC off. From anywhere in the world.</div>
       </div>
-      <div class="service-card">
-        <div class="service-icon">📦</div>
-        <h3>Smart Devices Supply & Integration</h3>
-        <p>We source and supply quality smart devices from trusted brands, and handle full integration into your ecosystem.</p>
-        <a href="services.html" class="service-link">Learn more →</a>
-      </div>
-      <div class="service-card">
-        <div class="service-icon">🔧</div>
-        <h3>Maintenance & Technical Support</h3>
-        <p>Ongoing support, firmware updates, troubleshooting, and system expansions — we stay with you after installation.</p>
-        <a href="services.html" class="service-link">Learn more →</a>
+      <div class="case-card">
+        <div class="case-ico-wrap" style="background:rgba(46,125,82,.1);">🚪</div>
+        <div class="case-problem">The Problem</div>
+        <div class="case-title">"Who rang the doorbell? I'm upstairs"</div>
+        <p class="case-desc">You have to go downstairs every time someone rings. No way to see who it is without opening the door.</p>
+        <div class="case-solution">✅ EGS Solution: Smart video doorbell shows you exactly who's there on your phone before you open.</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- HOW IT WORKS -->
-<section class="section section-dark">
+<footer id="footer">
   <div class="container">
-    <div class="text-center">
-      <span class="eyebrow">Our Process</span>
-      <h2 class="section-title">How It Works</h2>
-      <p class="section-sub" style="margin:0 auto;">Simple, transparent, and engineering-led from start to finish.</p>
-    </div>
-    <div class="how-steps">
-      <div class="how-step">
-        <div class="how-num">01</div>
-        <h3>Consultation</h3>
-        <p>We visit your site, understand your needs, and design a system that fits your space and budget.</p>
-      </div>
-      <div class="how-step">
-        <div class="how-num">02</div>
-        <h3>System Design</h3>
-        <p>We select the right devices, plan wiring and connectivity, and prepare a full installation proposal.</p>
-      </div>
-      <div class="how-step">
-        <div class="how-num">03</div>
-        <h3>Installation & Setup</h3>
-        <p>Professional installation, full app configuration, testing, and hands-on training for you and your family.</p>
-      </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 EGS Energex Global Solutions. All rights reserved.</p>
     </div>
   </div>
-</section>
+</footer>
 
-<!-- FEATURED PRODUCTS -->
-<section class="section">
-  <div class="container">
-    <div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:16px;margin-bottom:32px;">
-      <div>
-        <span class="eyebrow">Our Catalog</span>
-        <h2 class="section-title" style="margin-bottom:0">
-          <span class="en">Featured Products</span>
-          <span class="ar-t">منتجات مميزة</span>
-        </h2>
-      </div>
-      <a href="products.html" class="btn btn-ghost">View All Products →</a>
-    </div>
-    <div class="products-grid" id="featuredGrid"></div>
-  </div>
-</section>
-
-<!-- WHY EGS -->
-<section class="section section-light">
-  <div class="container">
-    <div class="text-center">
-      <span class="eyebrow">Why Choose Us</span>
-      <h2 class="section-title">
-        <span class="en">Why EGS</span>
-        <span class="ar-t">لماذا EGS</span>
-      </h2>
-    </div>
-    <div class="why-grid">
-      <div class="why-card">
-        <div class="why-icon">🎓</div>
-        <h3>Engineering Expertise</h3>
-        <p>Founded by electrical engineers — every installation is designed to code, safe, and built to last.</p>
-      </div>
-      <div class="why-card">
-        <div class="why-icon">🇱🇧</div>
-        <h3>Built for Lebanon</h3>
-        <p>Our systems are designed around Lebanese electrical realities — power cuts, generator switching, no neutral wire.</p>
-      </div>
-      <div class="why-card">
-        <div class="why-icon">📡</div>
-        <h3>Works Without Internet</h3>
-        <p>LAN-based control means your smart home keeps working even when your internet goes down.</p>
-      </div>
-      <div class="why-card">
-        <div class="why-icon">🔒</div>
-        <h3>Trusted Brands Only</h3>
-        <p>We work exclusively with Sonoff, Tuya, and Summao — proven, globally certified smart home brands.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CTA -->
-<section class="cta-banner">
-  <div class="container">
-    <h2>Ready to Make Your Home Smart?</h2>
-    <p>Get a free consultation. We'll design the right system for your home and budget.</p>
-    <div class="btn-group">
-      <a href="contact.html" class="btn btn-primary">📞 Contact Us Now</a>
-      <a href="products.html" class="btn btn-outline">Browse Products</a>
-    </div>
-  </div>
-</section>
-
-<footer id="footer"></footer>
-
-<script src="js/products.js"></script>
 <script src="js/nav.js"></script>
-<script src="js/app.js"></script>
 </body>
 </html>
