@@ -169,5 +169,7 @@ document.addEventListener('DOMContentLoaded', function() {
   injectNavbar();
   injectFooter();
   injectWAFloat();
-  injectCartSidebar();
+  if(typeof PRODUCTS !== 'undefined') {
+    injectCartSidebar();
+  }
 });
