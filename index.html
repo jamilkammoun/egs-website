@@ -1,180 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<meta name="description" content="EGS Energex Global Solutions — Smart Home Systems Design, Supply & Installation in North Lebanon. Sonoff, Tuya, Summao products."/>
-<title>EGS — Energex Global Solutions | Smart Home Systems</title>
-<link rel="stylesheet" href="css/style.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Energex Global Solutions | Smart Home & Electrical Solutions</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
 </head>
 <body>
 
-<!-- NAVBAR -->
-<nav id="navbar">
-  <div class="nav-container">
-    <a href="index.html" class="nav-logo">
-      <img src="images/EGS-logo.jpg" alt="EGS Logo" />
-      <span>EGS</span>
-    </a>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="products.html">Products</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </div>
-</nav>
+  <!-- NAVBAR -->
+  <header id="navbar">
+    <div class="nav-inner container">
+      <a href="#" class="nav-logo">
+        <img src="images/logo.svg" alt="EGS Logo" class="nav-logo-svg">
+        <div class="nav-logo-text">
+          <strong>Energex Global</strong>
+          <span>Solutions</span>
+        </div>
+      </a>
+      <nav class="nav-links">
+        <a href="#hero" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-right">
+        <button class="nav-cta">Get a Quote</button>
+        <button class="lang-btn">EN</button>
+        <button class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-menu">
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="container">
-    <div class="hero-grid">
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <div class="container hero-grid">
       <div class="hero-left">
-        <h1>Engineered<br/><span class="text-green">Smart Living</span></h1>
-        <p class="hero-sub">Smart Home & Electrical Solutions</p>
-        <p class="hero-desc">
-          Professional design, supply, and installation of smart home systems. From a single smart switch to a fully automated residence — engineered to work reliably in Lebanon.
-        </p>
+        <span class="hero-pill">Smart Solutions</span>
+        <h1>Empowering <span>Smart Living</span> for Your Home & Business</h1>
+        <p class="hero-sub">Energex Global Solutions provides cutting-edge electrical and smart home systems that improve comfort, efficiency, and sustainability.</p>
         <div class="hero-btns">
-          <a href="contact.html" class="btn btn-primary">📞 Get a Free Consultation</a>
-          <a href="products.html" class="btn btn-outline">Explore Products →</a>
+          <a href="#products" class="btn btn-primary">View Products</a>
+          <a href="#contact" class="btn btn-outline">Contact Us</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="hero-stat-val">50+</div>
+            <div class="hero-stat-lbl">Projects Completed</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-val">20+</div>
+            <div class="hero-stat-lbl">Smart Devices</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-val">10+</div>
+            <div class="hero-stat-lbl">Years Experience</div>
+          </div>
         </div>
       </div>
-      <div class="hero-right">
-        <!-- Floating product images -->
-        <div class="floating-product" style="--i:1;">
-          <img src="images/product1.jpg" alt="WiFi Light Switch">
+      <div class="hero-right hero-visual">
+        <div class="hero-visual-title">Featured Devices</div>
+        <div class="hero-device-list">
+          <div class="hero-device">
+            <div class="hero-device-ico">💡</div>
+            <div class="hero-device-info">
+              <div class="hero-device-name">WiFi Light Switch</div>
+              <div class="hero-device-status">Online</div>
+            </div>
+            <div class="hero-device-toggle"></div>
+          </div>
+          <div class="hero-device">
+            <div class="hero-device-ico">🎛️</div>
+            <div class="hero-device-info">
+              <div class="hero-device-name">Dimmer Switch</div>
+              <div class="hero-device-status">Active</div>
+            </div>
+            <div class="hero-device-toggle"></div>
+          </div>
+          <div class="hero-device">
+            <div class="hero-device-ico">🚪</div>
+            <div class="hero-device-info">
+              <div class="hero-device-name">Garage Door Module</div>
+              <div class="hero-device-status">Online</div>
+            </div>
+            <div class="hero-device-toggle"></div>
+          </div>
         </div>
-        <div class="floating-product" style="--i:2;">
-          <img src="images/product2.jpg" alt="Smart Dimmer">
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section section-light">
+    <div class="container text-center">
+      <span class="eyebrow">About Us</span>
+      <h2 class="section-title">Who We Are</h2>
+      <p class="section-sub">Energex Global Solutions (EGS) specializes in smart home automation, electrical design, and sustainable solutions. We bring innovation, reliability, and efficiency to homes and businesses.</p>
+      <img src="images/about.jpg" alt="About EGS" style="margin-top:24px; border-radius:12px; max-width:600px;">
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section">
+    <div class="container text-center">
+      <span class="eyebrow">Our Expertise</span>
+      <h2 class="section-title">Services We Offer</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">💡</div>
+          <h3>Smart Home Automation</h3>
+          <p>Control lights, switches, curtains, and security systems seamlessly from your smartphone.</p>
         </div>
-        <div class="floating-product" style="--i:3;">
-          <img src="images/product3.jpg" alt="Smart Curtain Motor">
+        <div class="service-card">
+          <div class="service-icon">📐</div>
+          <h3>Electrical Design & Consulting</h3>
+          <p>Expert design and consultation for residential and commercial electrical systems.</p>
         </div>
-        <div class="floating-product" style="--i:4;">
-          <img src="images/product4.jpg" alt="Garage Door Module">
+        <div class="service-card">
+          <div class="service-icon">🔋</div>
+          <h3>Renewable Energy Solutions</h3>
+          <p>Implement solar, battery, and hybrid systems for sustainable energy efficiency.</p>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- SERVICES OVERVIEW -->
-<section class="section section-light">
-  <div class="container">
-    <div class="text-center">
-      <span class="eyebrow">What We Do</span>
-      <h2 class="section-title">Engineering-First Services</h2>
-      <p class="section-sub" style="margin:0 auto;">
-        We don't just sell products — we design, install, and maintain complete smart systems tailored to your space.
-      </p>
+  <!-- PRODUCTS -->
+  <section id="products" class="section section-light">
+    <div class="container text-center">
+      <span class="eyebrow">Products</span>
+      <h2 class="section-title">Our Latest Devices</h2>
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="switch">Switches</button>
+        <button class="filter-btn" data-filter="motor">Motors</button>
+      </div>
+      <div class="products-grid">
+        <div class="prod-card" data-category="switch">
+          <div class="prod-img-wrap">
+            <div class="prod-img"><img src="images/product1.png" alt="WiFi Light Switch 1 Gang"></div>
+            <div class="prod-tag tag-green">New</div>
+          </div>
+          <div class="prod-body">
+            <div class="prod-name">WiFi Light Switch 1 Gang</div>
+            <div class="prod-model">Model: EGS-WS1</div>
+            <div class="prod-price">$45</div>
+            <div class="prod-btns">
+              <button class="prod-btn-cart">Add to Cart</button>
+              <button class="prod-btn-detail">Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="prod-card" data-category="switch">
+          <div class="prod-img-wrap">
+            <div class="prod-img"><img src="images/product2.png" alt="WiFi Dimmer Switch"></div>
+            <div class="prod-tag tag-blue">Hot</div>
+          </div>
+          <div class="prod-body">
+            <div class="prod-name">WiFi Dimmer Switch</div>
+            <div class="prod-model">Model: EGS-DS1</div>
+            <div class="prod-price">$55</div>
+            <div class="prod-btns">
+              <button class="prod-btn-cart">Add to Cart</button>
+              <button class="prod-btn-detail">Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="prod-card" data-category="motor">
+          <div class="prod-img-wrap">
+            <div class="prod-img"><img src="images/product3.png" alt="WiFi Garage Door Module"></div>
+            <div class="prod-tag tag-gold">Best</div>
+          </div>
+          <div class="prod-body">
+            <div class="prod-name">WiFi Garage Door Module</div>
+            <div class="prod-model">Model: EGS-GD1</div>
+            <div class="prod-price">$120</div>
+            <div class="prod-btns">
+              <button class="prod-btn-cart">Add to Cart</button>
+              <button class="prod-btn-detail">Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="services-grid">
-      <div class="service-card">
-        <div class="service-icon">🏠</div>
-        <h3>Smart Home Systems Design & Installation</h3>
-        <p>End-to-end smart home projects — site assessment, system design, device installation, and app configuration.</p>
-        <a href="services.html" class="service-link">Learn more →</a>
-      </div>
-      <div class="service-card">
-        <div class="service-icon">⚡</div>
-        <h3>Electrical Systems & Power Distribution</h3>
-        <p>Professional electrical installations integrated with smart control systems — generator monitoring, circuit protection, and more.</p>
-        <a href="services.html" class="service-link">Learn more →</a>
-      </div>
-      <div class="service-card">
-        <div class="service-icon">📦</div>
-        <h3>Smart Devices Supply & Integration</h3>
-        <p>We source and supply quality smart devices from trusted brands, and handle full integration into your ecosystem.</p>
-        <a href="services.html" class="service-link">Learn more →</a>
-      </div>
-      <div class="service-card">
-        <div class="service-icon">🔧</div>
-        <h3>Maintenance & Technical Support</h3>
-        <p>Ongoing support, firmware updates, troubleshooting, and system expansions — we stay with you after installation.</p>
-        <a href="services.html" class="service-link">Learn more →</a>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
 
-<!-- HOW IT WORKS -->
-<section class="section section-dark">
-  <div class="container">
-    <div class="text-center">
-      <span class="eyebrow">Our Process</span>
-      <h2 class="section-title">How It Works</h2>
-      <p class="section-sub" style="margin:0 auto;">Simple, transparent, and engineering-led from start to finish.</p>
+  <!-- CONTACT -->
+  <section id="contact" class="section section-blue">
+    <div class="container text-center">
+      <span class="eyebrow">Get in Touch</span>
+      <h2 class="section-title">Contact Us</h2>
+      <p class="section-sub">Have questions or want a custom solution? Send us a message and we’ll get back to you promptly.</p>
+      <form style="max-width:500px; margin:32px auto; display:flex; flex-direction:column; gap:16px;">
+        <input type="text" placeholder="Your Name" required style="padding:12px; border-radius:8px; border:none;">
+        <input type="email" placeholder="Your Email" required style="padding:12px; border-radius:8px; border:none;">
+        <textarea placeholder="Your Message" required style="padding:12px; border-radius:8px; border:none; resize:none;"></textarea>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
     </div>
-    <div class="how-steps">
-      <div class="how-step">
-        <div class="how-num">01</div>
-        <h3>Consultation</h3>
-        <p>We visit your site, understand your needs, and design a system that fits your space and budget.</p>
-      </div>
-      <div class="how-step">
-        <div class="how-num">02</div>
-        <h3>System Design</h3>
-        <p>We select the right devices, plan wiring and connectivity, and prepare a full installation proposal.</p>
-      </div>
-      <div class="how-step">
-        <div class="how-num">03</div>
-        <h3>Installation & Setup</h3>
-        <p>Professional installation, full app configuration, testing, and hands-on training for you and your family.</p>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
 
-<!-- WHY EGS -->
-<section class="section section-light">
-  <div class="container">
-    <div class="text-center">
-      <span class="eyebrow">Why Choose Us</span>
-      <h2 class="section-title">Why EGS</h2>
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="images/logo.svg" alt="EGS Logo" class="footer-logo-svg">
+        <p>Empowering smart living solutions with advanced electrical engineering and automation.</p>
+        <div class="footer-social">
+          <a href="#" class="social-link">FB</a>
+          <a href="#" class="social-link">IG</a>
+          <a href="#" class="social-link">LI</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <div class="footer-contact-item">📧 info@egs.com</div>
+        <div class="footer-contact-item">📞 +961 70 123 456</div>
+        <div class="footer-contact-item">📍 Tripoli, Lebanon</div>
+      </div>
     </div>
-    <div class="why-grid">
-      <div class="why-card">
-        <div class="why-icon">🎓</div>
-        <h3>Engineering Expertise</h3>
-        <p>Founded by electrical engineers — every installation is designed to code, safe, and built to last.</p>
-      </div>
-      <div class="why-card">
-        <div class="why-icon">🇱🇧</div>
-        <h3>Built for Lebanon</h3>
-        <p>Our systems are designed around Lebanese electrical realities — power cuts, generator switching, no neutral wire.</p>
-      </div>
-      <div class="why-card">
-        <div class="why-icon">📡</div>
-        <h3>Works Without Internet</h3>
-        <p>LAN-based control means your smart home keeps working even when your internet goes down.</p>
-      </div>
-      <div class="why-card">
-        <div class="why-icon">🔒</div>
-        <h3>Trusted Brands Only</h3>
-        <p>We work exclusively with Sonoff, Tuya, and Summao — proven, globally certified smart home brands.</p>
+    <div class="footer-divider"></div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2026 Energex Global Solutions. All rights reserved.</div>
+      <div class="footer-badges">
+        <div class="footer-badge">EGS</div>
+        <div class="footer-badge">Smart Home</div>
       </div>
     </div>
-  </div>
-</section>
+  </footer>
 
-<!-- CTA -->
-<section class="cta-banner">
-  <div class="container">
-    <h2>Ready to Make Your Home Smart?</h2>
-    <p>Get a free consultation. We'll design the right system for your home and budget.</p>
-    <div class="btn-group">
-      <a href="contact.html" class="btn btn-primary">📞 Contact Us Now</a>
-      <a href="products.html" class="btn btn-outline">Browse Products</a>
-    </div>
-  </div>
-</section>
+  <!-- FLOATING WHATSAPP -->
+  <a href="https://wa.me/96170123456" class="wa-float" target="_blank">💬</a>
 
-<footer id="footer"></footer>
+  <!-- JS for Mobile Menu -->
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    hamburger.addEventListener('click', () => mobileMenu.classList.toggle('open'));
+  </script>
 
-<script src="js/products.js"></script>
-<script src="js/nav.js"></script>
-<script src="js/app.js"></script>
 </body>
 </html>
