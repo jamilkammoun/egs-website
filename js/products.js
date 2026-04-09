@@ -150,63 +150,83 @@ const PRODUCTS = [
     desc:'Fully automatic lock with waterproof front panel. Ideal for external doors and villas.',
     specs:[['Feature','IP65 Waterproof Front'],['Battery','Lithium-ion Rechargeable'],['Unlock','Face, Fingerprint, App, Card'],['Video','Live Video Calling']]
   },
-  {
-    brand:'summao',
-    id:'sm_stg_touch',
-    cat:'switch',
-    tag:'GLASS TOUCH',
-    tc:'gold',
-    name:'Smart Glass Touch Switch',
-    model:'STG Series',
-    price:0,
-    pd:'$12 – $18',
-    img:'sm_touch_1g',
-    desc:'Luxury tempered glass touch switch. Available in 1 to 4 gangs to control all your lights.',
-    specs:[['Voltage','110-240VAC'],['Load','3-300W/gang'],['Standard','EU/UK 86x86mm'],['WiFi','2.4GHz IEEE 802.11 b/g/n']],
-    variants: [
-      { name: '1 Gang', price: 12, img: 'sm_touch_1g', model: 'STG-01' },
-      { name: '2 Gang', price: 14, img: 'sm_touch_2g', model: 'STG-02' },
-      { name: '3 Gang', price: 16, img: 'sm_touch_3g', model: 'STG-03' },
-      { name: '4 Gang', price: 18, img: 'sm_touch_4g', model: 'STG-04' }
-    ]
+{
+  brand:'summao',
+  id:'sm_stg_touch',
+  cat:'switch',
+  tag:'GLASS TOUCH',
+  tc:'gold',
+  name:'Smart Glass Touch Switch',
+  model:'STG Series',
+  price:0,
+  pd:'$12 – $18',
+  img:'sm_touch_1g',
+  desc:'Luxury tempered glass touch switch. Available in 1 to 4 gangs to control all your lights.',
+  specs:[['Voltage','110-240VAC'],['Load','3-300W/gang'],['Standard','EU/UK 86x86mm'],['WiFi','2.4GHz IEEE 802.11 b/g/n']],
+  variants:{gangs:['1 Gang','2 Gang','3 Gang','4 Gang']},
+  variantImgs:{
+    '1 Gang_White':'sm_touch_1g',
+    '2 Gang_White':'sm_touch_2g',
+    '3 Gang_White':'sm_touch_3g',
+    '4 Gang_White':'sm_touch_4g'
   },
+  variantPrices:{
+    '1 Gang':'$12.00',
+    '2 Gang':'$14.00',
+    '3 Gang':'$16.00',
+    '4 Gang':'$18.00'
+  }
+},
   {
-    brand:'summao',
-    id:'sm_combo_eu',
-    cat:'plug',
-    tag:'COMBO',
-    tc:'blue',
-    name:'Switch & EU Socket Combo',
-    model:'STG-09/11',
-    price:0,
-    pd:'$22 – $28',
-    img:'sm_combo_eu_1g',
-    desc:'Sleek glass panel combining smart switches with a high-power 16A EU socket.',
-    specs:[['Socket','16A / 3500W Max'],['Standard','EU Type F'],['Size','146 x 86 mm'],['Material','Tempered Glass']],
-    variants: [
-      { name: '1 Gang + Socket', price: 22, img: 'sm_combo_eu_1g', model: 'STG-09' },
-      { name: '2 Gang + Socket', price: 25, img: 'sm_combo_eu_2g', model: 'STG-10' },
-      { name: '3 Gang + Socket', price: 28, img: 'sm_combo_eu_3g', model: 'STG-11' }
-    ]
+  brand:'summao',
+  id:'sm_combo_eu',
+  cat:'plug',
+  tag:'COMBO',
+  tc:'blue',
+  name:'Switch & EU Socket Combo',
+  model:'STG-09/11',
+  price:0,
+  pd:'$22 – $28',
+  img:'sm_combo_eu_1g',
+  desc:'Sleek glass panel combining smart switches with a high-power 16A EU socket.',
+  specs:[['Socket','16A / 3500W Max'],['Standard','EU Type F'],['Size','146 x 86 mm'],['Material','Tempered Glass']],
+  variants:{gangs:['1 Gang + Socket','2 Gang + Socket','3 Gang + Socket']},
+  variantImgs:{
+    '1 Gang + Socket_White':'sm_combo_eu_1g',
+    '2 Gang + Socket_White':'sm_combo_eu_2g',
+    '3 Gang + Socket_White':'sm_combo_eu_3g'
   },
-  {
-    brand:'summao',
-    id:'sm_combo_usb',
-    cat:'plug',
-    tag:'USB CHARGE',
-    tc:'green',
-    name:'Switch & USB Socket Combo',
-    model:'STG-15/17',
-    price:0,
-    pd:'$25 – $32',
-    img:'sm_combo_usb_1g',
-    desc:'Modern smart panel with switches, a universal socket, and dual USB ports for charging.',
-    specs:[['USB Power','5V / 2.1A'],['Socket','13A Universal'],['Size','146 x 86 mm'],['Protection','Fireproof ABS/Glass']],
-    variants: [
-      { name: '1 Gang + USB', price: 25, img: 'sm_combo_usb_1g', model: 'STG-15' },
-      { name: '2 Gang + USB', price: 28, img: 'sm_combo_usb_2g', model: 'STG-16' },
-      { name: '3 Gang + USB', price: 32, img: 'sm_combo_usb_3g', model: 'STG-17' }
-    ]
+  variantPrices:{
+    '1 Gang + Socket':'$22.00',
+    '2 Gang + Socket':'$25.00',
+    '3 Gang + Socket':'$28.00'
+  }
+},
+ {
+  brand:'summao',
+  id:'sm_combo_usb',
+  cat:'plug',
+  tag:'USB CHARGE',
+  tc:'green',
+  name:'Switch & USB Socket Combo',
+  model:'STG-15/17',
+  price:0,
+  pd:'$25 – $32',
+  img:'sm_combo_usb_1g',
+  desc:'Modern smart panel with switches, a universal socket, and dual USB ports for charging.',
+  specs:[['USB Power','5V / 2.1A'],['Socket','13A Universal'],['Size','146 x 86 mm'],['Protection','Fireproof ABS/Glass']],
+  variants:{gangs:['1 Gang + USB','2 Gang + USB','3 Gang + USB']},
+  variantImgs:{
+    '1 Gang + USB_White':'sm_combo_usb_1g',
+    '2 Gang + USB_White':'sm_combo_usb_2g',
+    '3 Gang + USB_White':'sm_combo_usb_3g'
+  },
+  variantPrices:{
+    '1 Gang + USB':'$25.00',
+    '2 Gang + USB':'$28.00',
+    '3 Gang + USB':'$32.00'
+  }
+},    ]
   },
   {
     brand:'summao',
