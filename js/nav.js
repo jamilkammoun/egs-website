@@ -100,14 +100,14 @@ function injectFooter() {
         <div class="footer-contact">
           <h4>Contact</h4>
           <p>📍 North Lebanon</p>
-          <p>📧 <a href="mailto:info@egs-lb.com">info@egs-lb.com</a></p>
-          <p>📞 <a href="https://wa.me/${WA_NUMBER}">${WA_NUMBER}</a></p>
+          <p>📧 info@energexglobalsolutions.com</p>
+          <p>📞 +96171676127</p>
         </div>
       </div>
 
       <div class="footer-bottom">
         <p>&copy; ${new Date().getFullYear()} EGS — Energex Global Solutions. All rights reserved.</p>
-       
+        <p>Engineered by Eng. Jamil Kammoun</p>
       </div>
     </div>
   `;
