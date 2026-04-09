@@ -140,8 +140,7 @@ function renderCatalog() {
 function getVariantImg(p) {
   if(!p.variantImgs) return p.img;
   const g=currentVariants['gangs']||(p.variants&&p.variants.gangs?p.variants.gangs[0]:'1 Gang');
-  const c=currentVariants['color']||(p.variants&&p.variants.color?p.variants.color[0]:'White');
-  return p.variantImgs[g+'_'+c]||p.img;
+const c = currentVariants['color'] || (p.variants && p.variants.color ? p.variants.color[0] : 'White');  return p.variantImgs[g+'_'+c]||p.img;
 }
 function getVariantPrice(p) {
   if(!p.variantPrices) return p.pd;
