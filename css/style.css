@@ -40,7 +40,56 @@ html[lang="ar"] body {
   --radius:     12px;
   --radius-lg:  18px;
 }
+/* ALL OLD STYLES REMAINING, ADDING/UPDATING THESE: */
 
+:root {
+  --blue:       #0B3C5D;
+  --blue-dark:  #082d45;
+  --green:      #00C896;
+  --white:      #ffffff;
+  --light:      #F4F6F8;
+  --gray:       #6B7280;
+  --dark:       #111827;
+  --border:     #E5E7EB;
+  --radius:     12px;
+}
+
+/* Hide Arabic completely */
+.ar-t, .lang-btn, [dir="rtl"] { display: none !important; }
+
+/* Modern Tech Hero */
+.tech-hero {
+  position: relative;
+  background: var(--blue-dark);
+  overflow: hidden;
+}
+.hero-overlay {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: 
+    radial-gradient(circle at 80% 20%, rgba(0,200,150,0.15) 0%, transparent 50%),
+    linear-gradient(135deg, var(--blue) 0%, var(--blue-dark) 100%);
+  z-index: 0;
+}
+
+/* Real Scenario Cards */
+.cases-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin-top: 40px; }
+.case-card { background: white; padding: 30px; border-radius: 12px; border: 1px solid var(--border); box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+.case-ico-wrap { width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 15px; font-size: 1.5rem; }
+.case-problem { color: #e74c3c; font-weight: 800; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; }
+.case-title { font-weight: 700; margin: 5px 0 10px; font-size: 1.1rem; color: var(--dark); }
+.case-desc { font-size: 0.9rem; color: var(--gray); margin-bottom: 15px; line-height: 1.6; }
+.case-solution { background: #f0fff4; color: #27ae60; padding: 12px; border-radius: 8px; font-size: 0.85rem; font-weight: 600; }
+
+/* FAQ Toggle Styling */
+.faq-list { max-width: 800px; margin: 40px auto 0; }
+.faq-item { border-bottom: 1px solid var(--border); }
+.faq-q { padding: 20px; display: flex; justify-content: space-between; cursor: pointer; font-weight: 700; color: var(--blue); align-items: center; }
+.faq-a { max-height: 0; overflow: hidden; transition: all 0.3s ease; padding: 0 20px; color: var(--gray); font-size: 0.9rem; }
+.faq-item.open .faq-a { max-height: 300px; padding-bottom: 20px; }
+
+/* Logo Adjustment */
+.nav-logo-svg { height: 45px; width: auto; }
 /* ── RESET ── */
 *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
 html { scroll-behavior:smooth; }
