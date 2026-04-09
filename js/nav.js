@@ -107,7 +107,7 @@ function injectFooter() {
 
       <div class="footer-bottom">
         <p>&copy; ${new Date().getFullYear()} EGS — Energex Global Solutions. All rights reserved.</p>
-        <p>Engineered by <a href="#">Eng. Abed El Hamid Kammoun</a> & <a href="#">Eng. Jamil Kammoun</a></p>
+       
       </div>
     </div>
   `;
