@@ -226,8 +226,7 @@ const PRODUCTS = [
     '2 Gang + USB':'$28.00',
     '3 Gang + USB':'$32.00'
   }
-},    ]
-  },
+},    
   {
     brand:'summao',
     id:'sm_heater_20a',
