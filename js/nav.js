@@ -59,10 +59,10 @@ function injectFooter() {
           <img src="images/EGS-logo.jpg" alt="EGS" class="footer-logo-img"/>
           <p>Professional smart home systems design, supply, and installation. Engineered for modern Lebanese living.</p>
           <div class="footer-social">
-            <a href="#" class="social-link" title="Instagram">📸</a>
-            <a href="#" class="social-link" title="Facebook">📘</a>
-            <a href="https://wa.me/${WA_NUMBER}" target="_blank" class="social-link" title="WhatsApp">💬</a>
-          </div>
+  <a href="https://www.instagram.com/egs.smart" target="_blank" class="social-link" title="Instagram">📸</a>
+  <a href="#" class="social-link" title="Facebook">📘</a>
+  <a href="https://wa.me/${WA_NUMBER}" target="_blank" class="social-link" title="WhatsApp">💬</a>
+</div>
         </div>
         <div class="footer-col">
           <h4>Pages</h4>
