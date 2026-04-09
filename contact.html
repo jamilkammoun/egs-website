@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<meta name="description" content="Contact EGS Energex Global Solutions — Smart home systems in North Lebanon. WhatsApp, phone, email."/>
+<title>Contact — EGS Energex Global Solutions</title>
+<link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<nav id="navbar"></nav>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a> › <span>Contact</span>
+    </div>
+    <h1>Get in Touch</h1>
+    <p>Free consultation. No pressure. We'll design the right solution for your home.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- Contact Info -->
+      <div>
+        <span class="eyebrow">Contact Information</span>
+        <h2 class="section-title">Reach Us Directly</h2>
+        <p class="section-sub" style="margin-bottom:28px;">
+          The fastest way to reach us is WhatsApp. We typically respond within minutes.
+        </p>
+
+        <div class="contact-info">
+          <a href="tel:+96171676127" class="contact-card">
+            <div class="contact-card-ico">📞</div>
+            <div>
+              <strong>Phone</strong>
+              <span>+961 71 676 127</span>
+            </div>
+          </a>
+          <a href="mailto:info@energexglobalsolutions.com" class="contact-card">
+            <div class="contact-card-ico">✉️</div>
+            <div>
+              <strong>Email</strong>
+              <span>info@energexglobalsolutions.com</span>
+            </div>
+          </a>
+          <div class="contact-card">
+            <div class="contact-card-ico">📍</div>
+            <div>
+              <strong>Location</strong>
+              <span>Tripoli, North Lebanon</span>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-card-ico">🌐</div>
+            <div>
+              <strong>Website</strong>
+              <span>energexglobalsolutions.com</span>
+            </div>
+          </div>
+        </div>
+
+        <a href="https://wa.me/96171676127" target="_blank" class="contact-wa-block" style="margin-top:20px;">
+          <div class="wa-ico">💬</div>
+          <h3>Chat on WhatsApp</h3>
+          <p>Fastest response — usually within minutes<br/>+961 71 676 127</p>
+        </a>
+
+        <!-- Delivery note -->
+        <div style="background:rgba(0,200,150,.06);border:1px solid rgba(0,200,150,.2);border-radius:var(--radius);padding:16px;margin-top:16px;">
+          <strong style="display:block;font-size:.84rem;color:var(--green);margin-bottom:6px;">📦 Supply & Delivery</strong>
+          <p style="font-size:.8rem;color:var(--gray);line-height:1.65;">Products typically arrive within 7–14 business days. Installation scheduling is confirmed after consultation.</p>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <h3>Send Us a Message</h3>
+        <div class="form-group">
+          <label>Full Name *</label>
+          <input type="text" placeholder="Your full name" required/>
+        </div>
+        <div class="form-group">
+          <label>Phone Number *</label>
+          <input type="tel" placeholder="+961 XX XXX XXX" required/>
+        </div>
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" placeholder="your@email.com"/>
+        </div>
+        <div class="form-group">
+          <label>Service Interested In</label>
+          <select>
+            <option value="">Select a service...</option>
+            <option>Smart Home Installation</option>
+            <option>Electrical Systems</option>
+            <option>Product Supply Only</option>
+            <option>Maintenance & Support</option>
+            <option>Other / Not sure yet</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Message *</label>
+          <textarea placeholder="Tell us about your project — property type, number of rooms, what you'd like to automate..." required></textarea>
+        </div>
+        <button class="form-submit" onclick="handleFormSubmit(event)">📨 Send Message</button>
+        <p style="font-size:.72rem;color:var(--gray);margin-top:10px;text-align:center;">Or message us directly on WhatsApp for the fastest response.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer id="footer"></footer>
+<script src="js/nav.js"></script>
+<script>
+function handleFormSubmit(e) {
+  e.preventDefault();
+  const name    = document.querySelector('input[type=text]').value;
+  const phone   = document.querySelector('input[type=tel]').value;
+  const service = document.querySelector('select').value;
+  const message = document.querySelector('textarea').value;
+  if (!name || !phone || !message) {
+    alert('Please fill in the required fields.');
+    return;
+  }
+  const msg = `Hello EGS!\n\nName: ${name}\nPhone: ${phone}\nService: ${service||'Not specified'}\n\nMessage:\n${message}`;
+  window.open('https://wa.me/96171676127?text='+encodeURIComponent(msg),'_blank');
+}
+</script>
+</body>
+</html>
