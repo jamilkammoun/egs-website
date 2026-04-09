@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<meta name="description" content="Contact EGS Energex Global Solutions — Smart home systems in North Lebanon. WhatsApp, phone, email."/>
+<meta name="description" content="Contact EGS Energex Global Solutions — Smart home systems in North Lebanon."/>
 <title>Contact — EGS Energex Global Solutions</title>
 <link rel="stylesheet" href="css/style.css"/>
 </head>
@@ -13,9 +13,7 @@
 
 <section class="page-hero">
   <div class="container">
-    <div class="breadcrumb">
-      <a href="index.html">Home</a> › <span>Contact</span>
-    </div>
+    <div class="breadcrumb"><a href="index.html">Home</a> › <span>Contact</span></div>
     <h1>Get in Touch</h1>
     <p>Free consultation. No pressure. We'll design the right solution for your home.</p>
   </div>
@@ -25,12 +23,12 @@
   <div class="container">
     <div class="contact-grid">
 
-      <!-- Contact Info -->
+      <!-- ── LEFT: Contact Info ── -->
       <div>
         <span class="eyebrow">Contact Information</span>
         <h2 class="section-title">Reach Us Directly</h2>
         <p class="section-sub" style="margin-bottom:28px;">
-          The fastest way to reach us is WhatsApp. We typically respond within minutes.
+          Choose how you'd like to reach us — phone, email, or WhatsApp. We respond fast.
         </p>
 
         <div class="contact-info">
@@ -64,37 +62,39 @@
           </div>
         </div>
 
+        <!-- WhatsApp block stays -->
         <a href="https://wa.me/96171676127" target="_blank" class="contact-wa-block" style="margin-top:20px;">
           <div class="wa-ico">💬</div>
           <h3>Chat on WhatsApp</h3>
           <p>Fastest response — usually within minutes<br/>+961 71 676 127</p>
         </a>
 
-        <!-- Delivery note -->
         <div style="background:rgba(0,200,150,.06);border:1px solid rgba(0,200,150,.2);border-radius:var(--radius);padding:16px;margin-top:16px;">
           <strong style="display:block;font-size:.84rem;color:var(--green);margin-bottom:6px;">📦 Supply & Delivery</strong>
           <p style="font-size:.8rem;color:var(--gray);line-height:1.65;">Products typically arrive within 7–14 business days. Installation scheduling is confirmed after consultation.</p>
         </div>
       </div>
 
-      <!-- Contact Form -->
+      <!-- ── RIGHT: Contact Form (sends via Email) ── -->
       <div class="contact-form">
-        <h3>Send Us a Message</h3>
+        <h3>✉️ Send Us a Message</h3>
+        <p style="font-size:.82rem;color:var(--gray);margin-bottom:20px;">Fill in the form below — it will open your email app with the message ready to send to <strong>info@energexglobalsolutions.com</strong></p>
+
         <div class="form-group">
           <label>Full Name *</label>
-          <input type="text" placeholder="Your full name" required/>
+          <input type="text" id="cf-name" placeholder="Your full name" required/>
         </div>
         <div class="form-group">
           <label>Phone Number *</label>
-          <input type="tel" placeholder="+961 XX XXX XXX" required/>
+          <input type="tel" id="cf-phone" placeholder="+961 XX XXX XXX" required/>
         </div>
         <div class="form-group">
           <label>Email Address</label>
-          <input type="email" placeholder="your@email.com"/>
+          <input type="email" id="cf-email" placeholder="your@email.com"/>
         </div>
         <div class="form-group">
           <label>Service Interested In</label>
-          <select>
+          <select id="cf-service">
             <option value="">Select a service...</option>
             <option>Smart Home Installation</option>
             <option>Electrical Systems</option>
@@ -105,10 +105,10 @@
         </div>
         <div class="form-group">
           <label>Message *</label>
-          <textarea placeholder="Tell us about your project — property type, number of rooms, what you'd like to automate..." required></textarea>
+          <textarea id="cf-message" placeholder="Tell us about your project — property type, number of rooms, what you'd like to automate..." required></textarea>
         </div>
-        <button class="form-submit" onclick="handleFormSubmit(event)">📨 Send Message</button>
-        <p style="font-size:.72rem;color:var(--gray);margin-top:10px;text-align:center;">Or message us directly on WhatsApp for the fastest response.</p>
+        <button class="form-submit" onclick="sendEmail()">✉️ Send Email</button>
+        <p style="font-size:.72rem;color:var(--gray);margin-top:10px;text-align:center;">This will open your email app with the message ready to send.</p>
       </div>
 
     </div>
@@ -118,18 +118,30 @@
 <footer id="footer"></footer>
 <script src="js/nav.js"></script>
 <script>
-function handleFormSubmit(e) {
-  e.preventDefault();
-  const name    = document.querySelector('input[type=text]').value;
-  const phone   = document.querySelector('input[type=tel]').value;
-  const service = document.querySelector('select').value;
-  const message = document.querySelector('textarea').value;
+function sendEmail() {
+  const name    = document.getElementById('cf-name').value.trim();
+  const phone   = document.getElementById('cf-phone').value.trim();
+  const email   = document.getElementById('cf-email').value.trim();
+  const service = document.getElementById('cf-service').value;
+  const message = document.getElementById('cf-message').value.trim();
+
   if (!name || !phone || !message) {
-    alert('Please fill in the required fields.');
+    alert('Please fill in your name, phone number, and message.');
     return;
   }
-  const msg = `Hello EGS!\n\nName: ${name}\nPhone: ${phone}\nService: ${service||'Not specified'}\n\nMessage:\n${message}`;
-  window.open('https://wa.me/96171676127?text='+encodeURIComponent(msg),'_blank');
+
+  const subject = encodeURIComponent('EGS Inquiry — ' + (service || 'General'));
+  const body = encodeURIComponent(
+    'Hello EGS,\n\n' +
+    'Name: ' + name + '\n' +
+    'Phone: ' + phone + '\n' +
+    (email ? 'Email: ' + email + '\n' : '') +
+    'Service: ' + (service || 'Not specified') + '\n\n' +
+    'Message:\n' + message + '\n\n' +
+    '---\nSent via energexglobalsolutions.com'
+  );
+
+  window.location.href = 'mailto:info@energexglobalsolutions.com?subject=' + subject + '&body=' + body;
 }
 </script>
 </body>
