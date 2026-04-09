@@ -46,7 +46,7 @@ function injectNavbar() {
       <a href="contact.html"  ${p==='contact' ?'class="active"':''}>📞 Contact</a>
     </div>`;
   const cb = document.getElementById('cartOpenBtn');
-  if (cb) cb.addEventListener('click', openCart);
+if (cb) cb.addEventListener('click', function(){ if(typeof openCart==='function') openCart(); });
 }
 
 function injectFooter() {
